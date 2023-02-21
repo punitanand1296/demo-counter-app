@@ -30,5 +30,12 @@ pipeline {
                 }
             }
         }
+        stage("quality gate status"){
+            steps{
+                script{
+                    waitForQualityGate abortPipeline: false, credentialsId: 'jenkins-integration'
+                }
+            }
+        }
     }
 }
