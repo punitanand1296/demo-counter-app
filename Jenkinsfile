@@ -46,7 +46,7 @@ pipeline {
                     nexusUrl: '54.196.190.74:8081', 
                     nexusVersion: 'nexus2', 
                     protocol: 'http', 
-                    repository: 'maven-release', 
+                    repository: 'demoapp-release', 
                     version: '1.0.0'
                 }
             }
